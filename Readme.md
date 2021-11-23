@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Илья Щетинин](https://up.htmlacademy.ru/adaptive/24/user/239055).
-* Наставник: `Александр Кошара`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
