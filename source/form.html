@@ -40,76 +40,80 @@
         <h2 class="review__title">Оставьте свой отзыв</h2>
         <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset fieldset">
             <legend class="review-form__legend">Представьтесь:</legend>
-            <label class="review-form__label">
+            <label class="review-form__label label">
               <span class="review-form__prompt">Имя*:</span>
-              <input class="review-form__input form-input" type="text" name="user-name" placeholder="Петр" required>
+              <input class="review-form__input input" type="text" name="user-name" placeholder="Петр" required>
             </label>
-            <label class="review-form__label">
+            <label class="review-form__label label">
               <span class="review-form__prompt">Фамилия*:</span>
-              <input class="review-form__input form-input" type="text" name="user-surname" placeholder="Иванов" required>
+              <input class="review-form__input input" type="text" name="user-surname" placeholder="Иванов" required>
             </label>
-            <label class="review-form__label">
+            <label class="review-form__label label">
               <span class="review-form__prompt">Отчество:</span>
-              <input class="review-form__input form-input" type="text" name="user-patronymic" placeholder="Александрович">
+              <input class="review-form__input input" type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset fieldset">
             <legend class="review-form__legend">Контактная информация:</legend>
-            <label class="review-form__prompt" for="user-phone">Контактный телефон*:</label>
-            <div class="input-wrapper input-wrapper--phone">
-              <input class="review-form__input form-input" id="user-phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+            <div class="user-phone-wrapper">
+              <label class="review-form__prompt label" for="user-phone">Контактный телефон*:</label>
+              <div class="input-wrapper">
+                <input class="review-form__input input" id="user-phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+              </div>
             </div>
-            <label class="review-form__prompt" for="user-email">Электронная почта*:</label>
-            <div class="input-wrapper input-wrapper--email">
-              <input class="review-form__input form-input" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
+            <div class="user-email-wrapper">
+              <label class="review-form__prompt label" for="user-email">Электронная почта*:</label>
+              <div class="input-wrapper">
+                <input class="review-form__input input" id="user-email" type="email" name="user-email" placeholder="Введите e-mail" required>
+              </div>
             </div>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset fieldset">
             <legend class="review-form__legend">Ваше общее впечатление:</legend>
-            <label class="review-form__label">
-              <input class="review-form__selector" type="radio" name="user-impression" value="positive">
-              <span class="review-form__custom review-form__custom--radio"></span>
+            <label class="review-form__label radio">
+              <input class="radio__selector" type="radio" name="user-impression" value="positive">
+              <span class="radio__custom"></span>
               Скорее положительное
             </label>
-            <label class="review-form__label">
-              <input class="review-form__selector" type="radio" name="user-impression" value="negative">
-              <span class="review-form__custom review-form__custom--radio"></span>
+            <label class="review-form__label radio">
+              <input class="radio__selector" type="radio" name="user-impression" value="negative">
+              <span class="radio__custom"></span>
               Скорее отрицательное
             </label>
-            <label class="review-form__label">
-              <input class="review-form__selector" type="radio" name="user-impression" value="difficult">
-              <span class="review-form__custom review-form__custom--radio"></span>
+            <label class="review-form__label radio">
+              <input class="radio__selector" type="radio" name="user-impression" value="difficult">
+              <span class="radio__custom"></span>
               Затрудняюсь ответить
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset fieldset">
             <legend class="review-form__legend">Посещенные достопримечательности:</legend>
-            <label class="review-form__label">
-              <input class="review-form__selector" type="checkbox" name="user-attraction" value="devil's-bridge" checked>
-              <span class="review-form__custom review-form__custom--check"></span>
+            <label class="review-form__label checkbox">
+              <input class="checkbox__selector" type="checkbox" name="user-attraction" value="devil's-bridge" checked>
+              <span class="checkbox__custom"></span>
               Мост Дьявола
             </label>
-            <label class="review-form__label">
-              <input class="review-form__selector" type="checkbox" name="user-attraction" value="mount-bell" checked>
-              <span class="review-form__custom review-form__custom--check"></span>
+            <label class="review-form__label checkbox">
+              <input class="checkbox__selector" type="checkbox" name="user-attraction" value="mount-bell" checked>
+              <span class="checkbox__custom"></span>
               Гора-Колокол
             </label>
-            <label class="review-form__label">
-              <input class="review-form__selector" type="checkbox" name="user-attraction" value="slide-park" checked>
-              <span class="review-form__custom review-form__custom--check"></span>
+            <label class="review-form__label checkbox">
+              <input class="checkbox__selector" type="checkbox" name="user-attraction" value="slide-park" checked>
+              <span class="checkbox__custom"></span>
               Слайд-парк
             </label>
-            <label class="review-form__label">
-              <input class="review-form__selector" type="checkbox" name="user-attraction" value="red-rocks">
-              <span class="review-form__custom review-form__custom--check"></span>
+            <label class="review-form__label checkbox">
+              <input class="checkbox__selector" type="checkbox" name="user-attraction" value="red-rocks">
+              <span class="checkbox__custom"></span>
               Красные скалы
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset">
+          <fieldset class="review-form__fieldset fieldset">
             <legend class="review-form__legend">Опишите свои эмоции:</legend>
-            <textarea class="review-form__input" name="user-feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="review-form__input input" name="user-feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="review-form__button button" type="submit">Отправить отзыв</button>
         </form>
@@ -159,16 +163,15 @@
       </div>
     </footer>
     <div class="modal-container">
-      <!-- Здесь определённо что-то не так с классами -->
-      <div class="modal-review-form modal-review-form-error">
-        <b class="modal-review-form__title">Что-то пошло не так!</b>
-        <p class="modal-review-form__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-review-form__button button" type="button">ОК</button>
+      <div class="info info-error">
+        <b class="info__title">Что-то пошло не так!</b>
+        <p class="info__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button button" type="button">ОК</button>
       </div>
-      <div class="modal-review-form modal-review-form-success">
-        <b class="modal-review-form__title">Ваш отзыв отправлен!</b>
-        <p class="modal-review-form__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal-review-form__button button" type="button">Закрыть окно</button>
+      <div class="info info-success">
+        <b class="info__title">Ваш отзыв отправлен!</b>
+        <p class="info__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <button class="info__button button" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>
