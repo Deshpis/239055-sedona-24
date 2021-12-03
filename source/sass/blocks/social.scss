@@ -1,0 +1,30 @@
+.social {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
+  display: grid;
+  width: 150px;
+  grid-template-columns: repeat(auto-fit, 46px);
+  gap: 6px;
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: $basic-bg-color;
+  text-align: center;
+}
+
+.social__logo-tw {
+  margin-top: 16px;
+}
+
+.social__logo-fb {
+  margin-top: 13px;
+}
+
+.social__logo-ytb {
+  margin-top: 17px;
+}

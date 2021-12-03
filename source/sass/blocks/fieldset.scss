@@ -1,0 +1,23 @@
+.fieldset {
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 25px;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  &--last {
+    margin-bottom: 26px;
+  }
+}
+
+.fieldset__legend {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
