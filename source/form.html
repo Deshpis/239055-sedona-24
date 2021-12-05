@@ -48,15 +48,15 @@
             <h3 class="fieldset__legend">Представьтесь:</h3>
             <label class="fieldset__label input">
               <span class="input__prompt">Имя*:</span>
-              <input class="input__field field" type="text" name="user-name" placeholder="Петр" required>
+              <input class="input__field" type="text" name="user-name" placeholder="Петр" required>
             </label>
             <label class="fieldset__label input">
               <span class="input__prompt">Фамилия*:</span>
-              <input class="input__field field" type="text" name="user-surname" placeholder="Иванов" required>
+              <input class="input__field" type="text" name="user-surname" placeholder="Иванов" required>
             </label>
             <label class="fieldset__label input">
               <span class="input__prompt">Отчество:</span>
-              <input class="input__field field" type="text" name="user-patronymic" placeholder="Александрович">
+              <input class="input__field type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </fieldset>
           <fieldset class="review-form__fieldset fieldset">
@@ -64,13 +64,13 @@
             <div class="fieldset__wrapper">
               <label class="fieldset__label input input--column">
                 <span class="input__prompt">Контактный телефон*:</span>
-                <input class="input__field field field--phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+                <input class="input__field input__field--phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
               </label>
             </div>
             <div class="fieldset__wrapper">
               <label class="fieldset__label input input--column">
                 <span class="input__prompt">Электронная почта*:</span>
-                <input class="input__field field field--email" type="email" name="user-email" placeholder="Введите e-mail" required>
+                <input class="input__field input__field--email" type="email" name="user-email" placeholder="Введите e-mail" required>
               </label>
             </div>
           </fieldset>
@@ -79,17 +79,17 @@
             <label class="fieldset__label radio">
               <input class="radio__control" type="radio" name="user-impression" value="positive">
               <span class="radio__icon"></span>
-              <span class="radio__text">Скорее положительное</span>
+              <span class="radio__prompt">Скорее положительное</span>
             </label>
             <label class="fieldset__label radio">
               <input class="radio__control" type="radio" name="user-impression" value="negative">
               <span class="radio__icon"></span>
-              <span class="radio__text">Скорее отрицательное</span>
+              <span class="radio__prompt">Скорее отрицательное</span>
             </label>
             <label class="fieldset__label radio">
               <input class="radio__control" type="radio" name="user-impression" value="difficult">
               <span class="radio__icon"></span>
-              <span class="radio__text">Затрудняюсь ответить</span>
+              <span class="radio__prompt">Затрудняюсь ответить</span>
             </label>
           </fieldset>
           <fieldset class="review-form__fieldset fieldset">
@@ -97,27 +97,30 @@
             <label class="fieldset__label checkbox">
               <input class="checkbox__control" type="checkbox" name="user-attraction" value="devil's-bridge" checked>
               <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Мост Дьявола</span>
+              <span class="checkbox__prompt">Мост Дьявола</span>
             </label>
             <label class="fieldset__label checkbox">
               <input class="checkbox__control" type="checkbox" name="user-attraction" value="mount-bell" checked>
               <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Гора-Колокол</span>
+              <span class="checkbox__prompt">Гора-Колокол</span>
             </label>
             <label class="fieldset__label checkbox">
               <input class="checkbox__control" type="checkbox" name="user-attraction" value="slide-park" checked>
               <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Слайд-парк</span>
+              <span class="checkbox__prompt">Слайд-парк</span>
             </label>
             <label class="fieldset__label checkbox">
               <input class="checkbox__control" type="checkbox" name="user-attraction" value="red-rocks">
               <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Красные скалы</span>
+              <span class="checkbox__prompt">Красные скалы</span>
             </label>
           </fieldset>
           <fieldset class="review-form__fieldset fieldset fieldset--last">
             <h3 class="fieldset__legend">Опишите свои эмоции:</h3>
-            <textarea class="fieldset__input field" name="user-feedback" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+            <label class="fieldset__label input">
+              <label class="input__prompt visually-hidden">Введите текст здесь:</label>
+              <textarea class="input__field" name="user-feedback" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+            </label>
           </fieldset>
           <div class="review-form__button-wrapper">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
@@ -133,7 +136,7 @@
         <li class="social__item">
           <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" rel="noopener noreferrer" target="_blank">
             <span class="visually-hidden">Твиттер</span>
-            <svg class="social__logo-tw" aria-hidden="true" focusable="false" width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.3.17c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4Z" fill="#fff"/>
             </svg>
           </a>
@@ -141,7 +144,7 @@
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" rel="noopener noreferrer" target="_blank">
             <span class="visually-hidden">Фейсбук</span>
-            <svg class="social__logo-fb" aria-hidden="true" focusable="false" width="9" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="9" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z" fill="#fff"/>
             </svg>
           </a>
@@ -149,7 +152,7 @@
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/c/HTMLAcademyRUS" rel="noopener noreferrer" target="_blank">
             <span class="visually-hidden">Ютуб</span>
-            <svg class="social__logo-ytb" aria-hidden="true" focusable="false" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg aria-hidden="true" focusable="false" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z" fill="#fff"/>
             </svg>
           </a>
@@ -168,12 +171,12 @@
       <div class="info info-error">
         <b class="info__title">Что-то пошло не так!</b>
         <p class="info__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="info__button--error button" type="button">ОК</button>
+        <button class="info__button info__button--error button" type="button">ОК</button>
       </div>
       <div class="info info-success">
         <b class="info__title">Ваш отзыв отправлен!</b>
         <p class="info__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="info__button--success button" type="button">Закрыть окно</button>
+        <button class="info__button info__button--success button" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>

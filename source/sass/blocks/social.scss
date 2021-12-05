@@ -10,21 +10,11 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
   background-color: $basic-bg-color;
   text-align: center;
-}
-
-.social__logo-tw {
-  margin-top: 16px;
-}
-
-.social__logo-fb {
-  margin-top: 13px;
-}
-
-.social__logo-ytb {
-  margin-top: 17px;
 }
