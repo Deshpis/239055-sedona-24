@@ -1,0 +1,34 @@
+.info {
+  padding: 40px;
+  padding-bottom: 35px;
+  display: none;
+  text-align: center;
+
+  &--show {
+    display: block;
+  }
+}
+
+.info__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.info__text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.info__button {
+  &--error {
+    margin: 0 auto;
+    width: 180px;
+  }
+
+  &--success {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+.hashtags {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.hashtags__item {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}

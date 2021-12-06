@@ -1,0 +1,21 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  margin-right: 12px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright__logo-link {
+  display: block;
+  width: 27px;
+  height: 35px;
+}
+
+.copyright__logo-academy {
+  fill: #000000;
+}
