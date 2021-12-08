@@ -17,3 +17,19 @@
 .hotel-search__button {
   width: 100%;
 }
+
+@media (min-width: $tablet-size) {
+  .hotel-search {
+    padding: 58px 155px 58px 155px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .hotel-search {
+    padding: 58px 371px 66px 371px;
+  }
+
+  .hotel-search__title {
+    font-size: 26px;
+  }
+}

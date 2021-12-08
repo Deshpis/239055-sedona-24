@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+.social__items {
+  display: block;
+}
+
 .social__link {
   display: flex;
   align-items: center;
@@ -17,4 +21,10 @@
   height: 48px;
   background-color: $basic-bg-color;
   text-align: center;
+}
+
+@media (min-width: $tablet-size) {
+  .social {
+    margin: 0 auto;
+  }
 }

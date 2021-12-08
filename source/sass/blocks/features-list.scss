@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
 
-  &--bg-color {
+  &--have-image {
     padding: 0;
     color: #ffffff;
     background-color: $basic-bg-color;
@@ -57,5 +57,60 @@
 
   & img {
     display: block;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .features-list {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+  }
+
+  .features-list__wrapper {
+    padding: 42px 40px 42px 40px;
+  }
+
+  .features-list__title {
+    font-size: 21px;
+  }
+
+  .features-list__item:not(.features-list__item--have-image) {
+    padding: 42px 40px 42px 40px;
+    background-color: #eeeeee;
+  }
+
+  .features-list__item--have-image {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+    grid-template-areas:
+      "description image image"
+      "sub_desc sub_desc sub_desc";
+
+    & .features-list__wrapper {
+      grid-area: description;
+    }
+
+    & .features-list__image {
+      grid-area: image;
+    }
+
+    & .features-list__details {
+      grid-area: subdesc;
+    }
+  }
+
+  .features-list__item--reverse-image {
+    grid-template-areas: "image image description";
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .features-list {
+    grid-template-columns: repeat(3, 400px);
+  }
+
+  .features-list__item--have-image {
+    grid-template-columns: repeat(3, 400px);
   }
 }
