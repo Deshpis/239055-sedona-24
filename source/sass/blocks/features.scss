@@ -27,6 +27,27 @@
 }
 
 .features__intro {
+  margin: 0;
   font-size: 14px;
   color: $sub-text-color;
+}
+
+@media (min-width: $tablet-size) {
+  .features__wrapper {
+    padding: 44px 124px 53px 124px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .features__slogan {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .features__wrapper {
+    padding: 55px 359px 41px 359px;
+  }
 }

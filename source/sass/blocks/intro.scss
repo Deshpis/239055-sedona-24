@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  padding: 90px 19px 85px 19px;
+  padding: 24px 46px 67px 46px;
   background-color: #808f9a;
   background-image: url("../../img/intro-bg-mobile.jpg");
   background-repeat: no-repeat;
@@ -19,5 +19,17 @@
     background-image: url("../../img/intro-bg-mobile-decor.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .intro {
+    padding: 67px 157px 117px 157px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .intro {
+    padding: 60px 369px 120px 369px;
   }
 }

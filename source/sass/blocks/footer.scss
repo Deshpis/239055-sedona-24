@@ -2,3 +2,19 @@
   padding: 38px 30px 30px 23px;
   text-align: center;
 }
+
+@media (min-width: $tablet-size) {
+  .footer {
+    padding: 36px 65px 36px 65px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .footer {
+    padding: 36px 120px 36px 120px;
+    display: flex;
+    align-items: center;
+  }
+}
