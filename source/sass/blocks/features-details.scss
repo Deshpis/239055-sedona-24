@@ -74,24 +74,22 @@
     &::before {
       top: 60px;
       left: 50%;
+      transform: translate(-50%);
     }
 
     &--house::before {
-      margin-left: -38px;
       width: 75px;
       height: 73px;
       background-image: url("../../img/feature-house.svg");
     }
 
     &--souvenirs::before {
-      margin-left: -32px;
       width: 63px;
       height: 76px;
       background-image: url("../../img/feature-souvenirs.svg");
     }
 
     &--food::before {
-      margin-left: -35px;
       width: 77px;
       height: 69px;
       background-image: url("../../img/feature-food.svg");
