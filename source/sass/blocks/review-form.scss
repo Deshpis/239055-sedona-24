@@ -3,6 +3,58 @@
   padding-left: 20px;
 }
 
+.review-form__footnote {
+  display: none;
+}
+
 .review-form__button {
   width: 100%;
+}
+
+@media (min-width: $tablet-size) {
+  .review-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "impression name"
+      "contacts contacts"
+      "attraction attraction"
+      "feedback feedback"
+      "button footnote";
+  }
+
+  .review-form__fieldset-name {
+    grid-area: name;
+  }
+
+  .review-form__fieldset-contacts {
+    grid-area: contacts;
+  }
+
+  .review-form__fieldset-impression {
+    grid-area: impression;
+  }
+
+  .review-form__fieldset-attraction {
+    grid-area: attraction;
+    /* Что-то перебивает отступы */
+    padding-right: 135px;
+    padding-left: 135px;
+  }
+
+  .review-form__fieldset-feedback {
+    grid-area: feedback;
+  }
+
+  .review-form__button-wrapper {
+    grid-area: button;
+    padding: 0;
+  }
+
+  .review-form__footnote {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: footnote;
+  }
 }

@@ -17,3 +17,32 @@
   font-size: 14px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-size) {
+  .media__wrapper {
+    padding: 65px 155px 65px 155px;
+  }
+
+  .media__title {
+    font-size: 30px;
+  }
+
+  .media__photo-wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .media__wrapper {
+    padding: 102px 370px 67px 370px;
+  }
+
+  .media__photo-wrapper {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+  }
+}

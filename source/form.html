@@ -44,7 +44,7 @@
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review-form__fieldset fieldset">
+          <fieldset class="review-form__fieldset-name fieldset">
             <h3 class="fieldset__legend">Представьтесь:</h3>
             <label class="fieldset__label input">
               <span class="input__prompt">Имя*:</span>
@@ -59,7 +59,7 @@
               <input class="input__field type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset">
+          <fieldset class="review-form__fieldset-contacts fieldset">
             <h3 class="fieldset__legend">Контактная информация:</h3>
             <div class="fieldset__wrapper">
               <label class="fieldset__label input input--column">
@@ -74,10 +74,10 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset">
+          <fieldset class="review-form__fieldset-impression fieldset">
             <h3 class="fieldset__legend">Ваше общее впечатление:</h3>
             <label class="fieldset__label radio">
-              <input class="radio__control" type="radio" name="user-impression" value="positive">
+              <input class="radio__control" type="radio" name="user-impression" value="positive" checked>
               <span class="radio__icon"></span>
               <span class="radio__prompt">Скорее положительное</span>
             </label>
@@ -92,7 +92,7 @@
               <span class="radio__prompt">Затрудняюсь ответить</span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset">
+          <fieldset class="review-form__fieldset-attraction fieldset">
             <h3 class="fieldset__legend">Посещенные достопримечательности:</h3>
             <label class="fieldset__label checkbox">
               <input class="checkbox__control" type="checkbox" name="user-attraction" value="devil's-bridge" checked>
@@ -115,13 +115,14 @@
               <span class="checkbox__prompt">Красные скалы</span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset fieldset--last">
+          <fieldset class="review-form__fieldset-feedback fieldset fieldset--last">
             <h3 class="fieldset__legend">Опишите свои эмоции:</h3>
             <label class="fieldset__label input">
               <label class="input__prompt visually-hidden">Введите текст здесь:</label>
               <textarea class="input__field" name="user-feedback" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
+          <span class="review-form__footnote">* - обязательные поля</span>
           <div class="review-form__button-wrapper">
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
           </div>
@@ -168,12 +169,12 @@
       </div>
     </footer>
     <div class="modal-container">
-      <div class="info info-error">
+      <div class="info info--error">
         <b class="info__title">Что-то пошло не так!</b>
         <p class="info__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="info__button info__button--error button" type="button">ОК</button>
       </div>
-      <div class="info info-success">
+      <div class="info info--success">
         <b class="info__title">Ваш отзыв отправлен!</b>
         <p class="info__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <button class="info__button info__button--success button" type="button">Закрыть окно</button>

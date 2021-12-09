@@ -32,3 +32,24 @@
     width: 100%;
   }
 }
+
+@media (min-width: $tablet-size) {
+  .info {
+    box-sizing: border-box;
+  }
+
+  .info__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .info--error {
+    padding: 52px 64px 49px 64px;
+    width: 400px;
+  }
+
+  .info--success {
+    padding: 55px 99px 44px 99px;
+    width: 640px;
+  }
+}

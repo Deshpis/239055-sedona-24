@@ -21,3 +21,10 @@
   line-height: 26px;
   text-align: center;
 }
+
+@media (min-width: $tablet-size) {
+  .fieldset {
+    border-top: none;
+    padding: 0;
+  }
+}
