@@ -44,7 +44,7 @@
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review-form__fieldset-name fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--half-width fieldset">
             <h3 class="fieldset__legend">Представьтесь:</h3>
             <label class="fieldset__label input">
               <span class="input__prompt">Имя*:</span>
@@ -59,73 +59,71 @@
               <input class="input__field type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset-contacts fieldset">
+          <fieldset class="review-form__fieldset fieldset">
             <h3 class="fieldset__legend">Контактная информация:</h3>
-            <div class="fieldset__wrapper">
-              <label class="fieldset__label input input--column">
-                <span class="input__prompt">Контактный телефон*:</span>
-                <input class="input__field input__field--phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
-              </label>
-            </div>
-            <div class="fieldset__wrapper">
-              <label class="fieldset__label input input--column">
-                <span class="input__prompt">Электронная почта*:</span>
-                <input class="input__field input__field--email" type="email" name="user-email" placeholder="Введите e-mail" required>
-              </label>
-            </div>
+            <label class="fieldset__label input input--column">
+              <span class="input__prompt">Контактный телефон*:</span>
+              <input class="input__field input__field--phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+            </label>
+            <label class="fieldset__label input input--column">
+              <span class="input__prompt">Электронная почта*:</span>
+              <input class="input__field input__field--email" type="email" name="user-email" placeholder="Введите e-mail" required>
+            </label>
           </fieldset>
-          <fieldset class="review-form__fieldset-impression fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--first review-form__fieldset--half-width fieldset">
             <h3 class="fieldset__legend">Ваше общее впечатление:</h3>
-            <label class="fieldset__label radio">
+            <label class="fieldset__radio radio">
               <input class="radio__control" type="radio" name="user-impression" value="positive" checked>
               <span class="radio__icon"></span>
               <span class="radio__prompt">Скорее положительное</span>
             </label>
-            <label class="fieldset__label radio">
+            <label class="fieldset__radio radio">
               <input class="radio__control" type="radio" name="user-impression" value="negative">
               <span class="radio__icon"></span>
               <span class="radio__prompt">Скорее отрицательное</span>
             </label>
-            <label class="fieldset__label radio">
+            <label class="fieldset__radio radio">
               <input class="radio__control" type="radio" name="user-impression" value="difficult">
               <span class="radio__icon"></span>
               <span class="radio__prompt">Затрудняюсь ответить</span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset-attraction fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset fieldset">
             <h3 class="fieldset__legend">Посещенные достопримечательности:</h3>
-            <label class="fieldset__label checkbox">
-              <input class="checkbox__control" type="checkbox" name="user-attraction" value="devil's-bridge" checked>
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__prompt">Мост Дьявола</span>
-            </label>
-            <label class="fieldset__label checkbox">
-              <input class="checkbox__control" type="checkbox" name="user-attraction" value="mount-bell" checked>
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__prompt">Гора-Колокол</span>
-            </label>
-            <label class="fieldset__label checkbox">
-              <input class="checkbox__control" type="checkbox" name="user-attraction" value="slide-park" checked>
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__prompt">Слайд-парк</span>
-            </label>
-            <label class="fieldset__label checkbox">
-              <input class="checkbox__control" type="checkbox" name="user-attraction" value="red-rocks">
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__prompt">Красные скалы</span>
-            </label>
+            <div class="fieldset__checkbox-wrapper">
+              <label class="fieldset__checkbox fieldset__checkbox checkbox">
+                <input class="checkbox__control" type="checkbox" name="user-attraction" value="devil's-bridge" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__prompt">Мост Дьявола</span>
+              </label>
+              <label class="fieldset__checkbox checkbox">
+                <input class="checkbox__control" type="checkbox" name="user-attraction" value="mount-bell" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__prompt">Гора-Колокол</span>
+              </label>
+              <label class="fieldset__checkbox checkbox">
+                <input class="checkbox__control" type="checkbox" name="user-attraction" value="slide-park" checked>
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__prompt">Слайд-парк</span>
+              </label>
+              <label class="fieldset__checkbox checkbox">
+                <input class="checkbox__control" type="checkbox" name="user-attraction" value="red-rocks">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__prompt">Красные скалы</span>
+              </label>
+            </div>
           </fieldset>
-          <fieldset class="review-form__fieldset-feedback fieldset fieldset--last">
+          <fieldset class="review-form__fieldset fieldset">
             <h3 class="fieldset__legend">Опишите свои эмоции:</h3>
             <label class="fieldset__label input">
               <label class="input__prompt visually-hidden">Введите текст здесь:</label>
-              <textarea class="input__field" name="user-feedback" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="input__field input__field--textarea" name="user-feedback" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
-          <span class="review-form__footnote">* - обязательные поля</span>
-          <div class="review-form__button-wrapper">
+
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
-          </div>
+
+          <span class="review-form__footnote">* - обязательные поля</span>
         </form>
       </section>
     </main>

@@ -1,9 +1,5 @@
 .radio {
   display: block;
-
-  &:not(:last-child) {
-    margin-bottom: 11px;
-  }
 }
 
 .radio__control {
@@ -58,10 +54,4 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
-}
-
-@media (min-width: $tablet-size) {
-  .radio:not(:last-child) {
-    margin-bottom: 20px;
-  }
 }

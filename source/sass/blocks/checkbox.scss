@@ -1,9 +1,5 @@
 .checkbox {
   display: block;
-
-  &:not(:last-child) {
-    margin-bottom: 11px;
-  }
 }
 
 .checkbox__control {

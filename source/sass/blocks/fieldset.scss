@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
 
-  &--last {
+  &:last-of-type {
     margin-bottom: 26px;
   }
 }
@@ -22,9 +22,40 @@
   text-align: center;
 }
 
+.fieldset__radio {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+
+.fieldset__checkbox {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+
 @media (min-width: $tablet-size) {
   .fieldset {
     border-top: none;
     padding: 0;
+  }
+
+  .fieldset__radio:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .fieldset__checkbox-wrapper {
+    padding-right: 95px;
+    padding-left: 95px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Пока примерно для вида */
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .fieldset__checkbox-wrapper {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
