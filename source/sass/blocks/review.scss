@@ -16,3 +16,29 @@
   line-height: 24px;
   color: $sub-text-color;
 }
+
+@media (min-width: $tablet-size) {
+  .review {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .review__wrapper {
+    padding: 64px 106px 60px 106px;
+  }
+
+  .review__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .review {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  .review__wrapper {
+    padding: 114px 262px 56px 262px;
+  }
+}

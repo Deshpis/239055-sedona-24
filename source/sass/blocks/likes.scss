@@ -14,8 +14,14 @@
     height: 21px;
     top: 0;
     left: 0;
-    background-image: url("../../img/likes.svg");
+    background-image: url("../../img/like-dark.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .likes::before {
+    background-image: url("../../img/like-light.svg");
   }
 }

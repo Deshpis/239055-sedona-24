@@ -1,4 +1,54 @@
-.checkbox__text {
+.checkbox {
+  display: block;
+}
+
+.checkbox__control {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .checkbox__icon::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -11px;
+    width: 24px;
+    height: 17px;
+    background-image: url("../../img/checkbox-icon.svg");
+  }
+
+  &:focus + .checkbox__icon {
+    outline: 2px solid #000000;
+  }
+}
+
+.checkbox__icon {
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  background-color: $radiocheck-color;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $radiocheck-color-hover;
+  }
+
+  &:active {
+    background-color: $radiocheck-color-active;
+  }
+
+  &:active .checkbox__icon::after {
+    opacity: 0.3;
+  }
+}
+
+.checkbox__prompt {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 84px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;

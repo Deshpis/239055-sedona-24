@@ -1,4 +1,55 @@
-.radio__text {
+.radio {
+  display: block;
+}
+
+.radio__control {
+  position: absolute;
+  appearance: none;
+
+  &:checked + .radio__icon::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: $sub-text-color;
+    border-radius: 50%;
+  }
+
+  &:focus + .radio__icon {
+    outline: 2px solid #000000;
+  }
+}
+
+.radio__icon {
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  background-color: $radiocheck-color;
+  border-radius: 50%;
+
+  &:hover .radio__icon {
+    background-color: $radiocheck-color-hover;
+  }
+
+  &:active .radio__icon {
+    background-color: $radiocheck-color-active;
+  }
+
+  &:active .radio__icon::after {
+    opacity: 0.3;
+  }
+}
+
+.radio__prompt {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 84px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
