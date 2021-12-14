@@ -1,19 +1,16 @@
 .footer {
-  padding: 38px 30px 30px 23px;
+  padding: 30px;
+  padding-top: 33px;
   text-align: center;
-}
 
-@media (min-width: $tablet-size) {
-  .footer {
-    padding: 36px 65px 36px 65px;
+  @media (min-width: $tablet-size) {
+    padding: 30px 60px 36px 60px;
     display: flex;
     align-items: center;
   }
-}
 
-@media (min-width: $desktop-size) {
-  .footer {
-    padding: 36px 120px 36px 120px;
+  @media (min-width: $desktop-size) {
+    padding: 30px 120px 36px 120px;
     display: flex;
     align-items: center;
   }

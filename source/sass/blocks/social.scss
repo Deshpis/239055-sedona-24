@@ -7,6 +7,10 @@
   grid-template-columns: repeat(auto-fit, 46px);
   gap: 6px;
   list-style: none;
+
+  @media (min-width: $tablet-size) {
+    margin-bottom: 0;
+  }
 }
 
 .social__items {
@@ -21,10 +25,4 @@
   height: 48px;
   background-color: $basic-bg-color;
   text-align: center;
-}
-
-@media (min-width: $tablet-size) {
-  .social {
-    margin: 0 auto;
-  }
 }
