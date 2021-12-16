@@ -10,6 +10,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -59,7 +60,7 @@
     margin: 0;
     padding: 158px 36px 60px 36px;
     min-width: 256px;
-    max-width: 33.33%;
+    max-width: 33%;
     background-color: #ffffff;
     text-align: center;
 
@@ -110,12 +111,6 @@
     margin-bottom: 23px;
     font-size: 21px;
     line-height: 26px;
-  }
-}
-
-.features-list__title-nowrap {
-  @media (min-width: $tablet-size) {
-    white-space: nowrap;
   }
 }
 

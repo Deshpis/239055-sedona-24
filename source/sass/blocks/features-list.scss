@@ -36,14 +36,13 @@
     padding: 25px 15px 24px 15px;
     width: 280px;
     border-top: 1px solid #d6d6d6;
-
   }
 
   @media (min-width: $tablet-size) {
     &:not(.features-list__item--have-image) {
       padding: 41px 40px 42px 40px;
       min-width: 256px;
-      max-width: 33.33%;
+      max-width: 33%;
     }
 
     &--have-image {
@@ -88,7 +87,7 @@
     box-sizing: border-box;
     padding: 42px 30px 41px 30px;
     min-width: 256px;
-    max-width: 33.33%;
+    max-width: 33%;
   }
 
   @media (min-width: $desktop-size) {
@@ -137,6 +136,12 @@
     margin-right: auto;
     margin-left: auto;
     width: 120px;
+  }
+}
+
+.features-list__title-nowrap {
+  @media (min-width: $tablet-size) {
+    white-space: nowrap;
   }
 }
 
