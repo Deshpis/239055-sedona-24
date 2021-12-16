@@ -1,7 +1,12 @@
+.header {
+  min-height: 56px;
+  background-color: #ffffff;
+}
+
 .header__logo {
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -51px;
+  transform: translate(-50%);
   z-index: 1;
 }
