@@ -7,36 +7,34 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="page__header header" href="index.html">
-      <a class="header__logo logo">
+    <header class="page__header header">
+      <a class="header__logo logo"  href="index.html">
         <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип Седона.">
       </a>
-      <nav class="header__nav main-nav">
+      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="media.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener noreferrer" target="_blank">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="media.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener noreferrer" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="intro">
+      <section class="intro intro--form">
         <h1 class="visually-hidden">Страница отзыва о Седоне</h1>
-        <img src="img/secondary-intro.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
+        <img src="img/second-intro.svg" width="229" height="39" alt="Добро пожаловать в Седону!">
       </section>
       <section class="review">
         <div class="review__wrapper">
@@ -44,7 +42,7 @@
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review-form__fieldset review-form__fieldset--half-width fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--half-width fieldset fieldset--name">
             <h3 class="fieldset__legend">Представьтесь:</h3>
             <label class="fieldset__label input">
               <span class="input__prompt">Имя*:</span>
@@ -56,21 +54,25 @@
             </label>
             <label class="fieldset__label input">
               <span class="input__prompt">Отчество:</span>
-              <input class="input__field type="text" name="user-patronymic" placeholder="Александрович">
+              <input class="input__field" type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset">
+          <fieldset class="review-form__fieldset fieldset fieldset--contacts">
             <h3 class="fieldset__legend">Контактная информация:</h3>
-            <label class="fieldset__label input input--column">
-              <span class="input__prompt">Контактный телефон*:</span>
-              <input class="input__field input__field--phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+            <label class="fieldset__label fieldset__label--phone input input--column">
+              <span class="input__prompt"><span class="input__desktop-hidden">Контактный</span> телефон*:</span>
+              <span class="input__wrapper input__wrapper--phone">
+                <input class="input__field input__field--phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
+              </span>
             </label>
-            <label class="fieldset__label input input--column">
+            <label class="fieldset__label fieldset__label--email input input--column">
               <span class="input__prompt">Электронная почта*:</span>
-              <input class="input__field input__field--email" type="email" name="user-email" placeholder="Введите e-mail" required>
+              <span class="input__wrapper input__wrapper--email">
+                <input class="input__field input__field--email" type="email" name="user-email" placeholder="Введите e-mail" required>
+              </span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset review-form__fieldset--first review-form__fieldset--half-width fieldset">
+          <fieldset class="review-form__fieldset review-form__fieldset--half-width fieldset fieldset--impression">
             <h3 class="fieldset__legend">Ваше общее впечатление:</h3>
             <label class="fieldset__radio radio">
               <input class="radio__control" type="radio" name="user-impression" value="positive" checked>
@@ -88,8 +90,8 @@
               <span class="radio__prompt">Затрудняюсь ответить</span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset review-form__fieldset fieldset">
-            <h3 class="fieldset__legend">Посещенные достопримечательности:</h3>
+          <fieldset class="review-form__fieldset fieldset fieldset--attraction">
+            <h3 class="fieldset__legend">Посещенные <br> достопримечательности:</h3>
             <div class="fieldset__checkbox-wrapper">
               <label class="fieldset__checkbox fieldset__checkbox checkbox">
                 <input class="checkbox__control" type="checkbox" name="user-attraction" value="devil's-bridge" checked>
@@ -113,17 +115,15 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset">
+          <fieldset class="review-form__fieldset fieldset fieldset--feedback">
             <h3 class="fieldset__legend">Опишите свои эмоции:</h3>
             <label class="fieldset__label input">
-              <label class="input__prompt visually-hidden">Введите текст здесь:</label>
-              <textarea class="input__field input__field--textarea" name="user-feedback" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+              <span class="input__prompt visually-hidden">Введите текст здесь:</span>
+              <textarea class="input__field input__field--textarea" name="user-feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
-
-            <button class="review-form__button button" type="submit">Отправить отзыв</button>
-
-          <span class="review-form__footnote">* - обязательные поля</span>
+          <button class="review-form__button button" type="submit">Отправить отзыв</button>
+          <span class="review-form__footnote">* &mdash; обязательные поля</span>
         </form>
       </section>
     </main>
@@ -166,17 +166,35 @@
         </a>
       </div>
     </footer>
-    <div class="modal-container">
-      <div class="info info--error">
-        <b class="info__title">Что-то пошло не так!</b>
-        <p class="info__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="info__button info__button--error button" type="button">ОК</button>
+    <div class="modal-container"> <!-- Для отображения .modal-container--show -->
+      <div class="info info--error info--show"> <!-- Для отображения .info--show -->
+          <b class="info__title">Что-то пошло не так!</b>
+          <p class="info__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="info__button info__button--error button" type="button">ОК</button>
       </div>
-      <div class="info info--success">
+      <div class="info info--success"> <!-- Для отображения .info--show -->
         <b class="info__title">Ваш отзыв отправлен!</b>
         <p class="info__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="info__button info__button--success button" type="button">Закрыть окно</button>
+        <div class="info__button-wrapper">
+          <button class="info__button info__button--success button" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
+    <script>
+      const navMain = document.querySelector('.main-nav');
+      const navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

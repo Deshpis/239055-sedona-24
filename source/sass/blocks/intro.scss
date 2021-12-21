@@ -1,14 +1,66 @@
 .intro {
   box-sizing: border-box;
   position: relative;
-  padding: 90px 15px 78px 15px;
-  min-height: 389px;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: #808f9a;
-  background-image: url("../../img/index-intro-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
+
+  &--index {
+    padding-top: 90px;
+    padding-bottom: 78px;
+    min-height: 389px;
+    background-image: url("../../img/index-intro-bg.jpg");
+
+    @media (min-width: $tablet-size) {
+      padding-top: 77px;
+      padding-bottom: 91px;
+      min-height: 518px;
+    }
+  }
+
+  &--media {
+    margin-bottom: 33px;
+    padding-top: 52px;
+    padding-bottom: 60px;
+    min-height: 158px;
+    background-image: url("../../img/second-intro-bg.jpg");
+
+    @media (min-width: $tablet-size) {
+      margin-bottom: 62px;
+      padding-top: 77px;
+      padding-bottom: 91px;
+      min-height: 287px
+    }
+
+    @media (min-width: $desktop-size) {
+      margin-bottom: 97px;
+      min-height: 300px;
+    }
+  }
+
+  &--form {
+    margin-bottom: 36px;
+    padding-top: 52px;
+    padding-bottom: 60px;
+    min-height: 158px;
+    background-image: url("../../img/second-intro-bg.jpg");
+
+    @media (min-width: $tablet-size) {
+      margin-bottom: 73px;
+      padding-top: 77px;
+      padding-bottom: 91px;
+      min-height: 287px
+    }
+
+    @media (min-width: $desktop-size) {
+      margin-bottom: 113px;
+      min-height: 300px;
+    }
+  }
 
   &::after {
     position: absolute;
@@ -22,11 +74,5 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-
-  @media (min-width: $tablet-size) {
-    padding-top: 77px;
-    padding-bottom: 91px;
-    min-height: 518px;
   }
 }

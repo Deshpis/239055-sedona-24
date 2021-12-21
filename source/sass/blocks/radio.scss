@@ -27,8 +27,8 @@
 
 .radio__icon {
   position: absolute;
-  width: 53px;
-  height: 53px;
+  width: 57px;
+  height: 57px;
   background-color: $radiocheck-color;
   border-radius: 50%;
 
@@ -48,8 +48,9 @@
 .radio__prompt {
   display: block;
   padding-top: 16px;
+  padding-right: 15px;
   padding-bottom: 16px;
-  padding-left: 84px;
+  padding-left: 78px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;

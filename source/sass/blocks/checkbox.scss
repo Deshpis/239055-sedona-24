@@ -1,5 +1,7 @@
 .checkbox {
-  display: block;
+  display: flex;
+  align-items: center;
+  min-height: 56px;
 }
 
 .checkbox__control {
@@ -26,8 +28,8 @@
 
 .checkbox__icon {
   position: absolute;
-  width: 51px;
-  height: 51px;
+  width: 56px;
+  height: 56px;
   background-color: $radiocheck-color;
   border-radius: 5px;
 
@@ -46,11 +48,11 @@
 
 .checkbox__prompt {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 84px;
+  padding-left: 79px;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+
+
 }
