@@ -79,7 +79,7 @@
   }
 
   &--email::after {
-    background-image: url("../../img/mail.svg")
+    background-image: url("../../img/mail.svg");
   }
 
   @media (min-width: $desktop-size) {
