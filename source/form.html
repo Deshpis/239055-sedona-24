@@ -42,7 +42,7 @@
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
         <form class="review__form review-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="review-form__fieldset review-form__fieldset--half-width fieldset fieldset--name">
+          <fieldset class="review-form__fieldset review-form__fieldset--name review-form__fieldset--half-width fieldset fieldset--name">
             <h3 class="fieldset__legend">Представьтесь:</h3>
             <label class="fieldset__label input">
               <span class="input__prompt">Имя*:</span>
@@ -57,7 +57,7 @@
               <input class="input__field" type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset fieldset--contacts">
+          <fieldset class="review-form__fieldset review-form__fieldset--contacts fieldset fieldset--contacts">
             <h3 class="fieldset__legend fieldset__legend--decor">Контактная информация:</h3>
             <label class="fieldset__label fieldset__label--phone input input--column">
               <span class="input__prompt"><span class="input__desktop-hidden">Контактный</span> телефон*:</span>
@@ -72,7 +72,7 @@
               </span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset review-form__fieldset--half-width fieldset fieldset--impression">
+          <fieldset class="review-form__fieldset review-form__fieldset--impression review-form__fieldset--half-width fieldset fieldset--impression">
             <h3 class="fieldset__legend">Ваше общее впечатление:</h3>
             <label class="fieldset__radio radio">
               <input class="radio__control" type="radio" name="user-impression" value="positive" checked>
@@ -90,7 +90,7 @@
               <span class="radio__prompt">Затрудняюсь ответить</span>
             </label>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset fieldset--attraction">
+          <fieldset class="review-form__fieldset review-form__fieldset--attraction fieldset fieldset--attraction">
             <h3 class="fieldset__legend fieldset__legend--decor">Посещенные <br> достопримечательности:</h3>
             <div class="fieldset__checkbox-wrapper">
               <label class="fieldset__checkbox fieldset__checkbox checkbox">
@@ -115,7 +115,7 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="review-form__fieldset fieldset fieldset--feedback">
+          <fieldset class="review-form__fieldset review-form__fieldset--feedback fieldset fieldset--feedback">
             <h3 class="fieldset__legend fieldset__legend--decor">Опишите свои эмоции:</h3>
             <label class="fieldset__label input">
               <span class="input__prompt visually-hidden">Введите текст здесь:</span>
@@ -180,21 +180,6 @@
         </div>
       </div>
     </div>
-    <script>
-      const navMain = document.querySelector('.main-nav');
-      const navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

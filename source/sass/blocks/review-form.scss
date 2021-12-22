@@ -15,13 +15,57 @@
 .review-form__fieldset {
   @media (min-width: $tablet-size) {
     width: 100%;
+  }
 
-    &--impression {
-      order: -1;
+  &--half-width {
+    @media (min-width: $tablet-size) {
+      width: 50%;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet-size) {
+      margin-bottom: 69px;
+      width: 265px;
     }
 
-    &--half-width {
-      width: 50%;
+    @media (min-width: $desktop-size) {
+      width: 400px;
+    }
+  }
+
+  &--contacts {
+    margin-bottom: 6px;
+
+    @media (min-width: $tablet-size) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &--impression {
+    margin-right: auto;
+    order: -1;
+
+    @media (min-width: $tablet-size) {
+      margin-bottom: 69px;
+    }
+  }
+
+  &--attraction {
+    @media (min-width: $tablet-size) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-size) {
+      margin-bottom: 68px;
+    }
+  }
+
+  &--feedback {
+    margin-bottom: 34px;
+
+    @media (min-width: $tablet-size) {
+      margin-bottom: 61px;
     }
   }
 }

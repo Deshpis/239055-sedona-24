@@ -1,5 +1,4 @@
 .fieldset {
-  margin: 0;
   padding: 20px;
   border: none;
   border-top: 1px solid #e5e5e5;
@@ -9,15 +8,6 @@
 
   &--name {
     padding-bottom: 23px;
-
-    @media (min-width: $tablet-size) {
-      margin-bottom: 69px;
-      width: 265px;
-    }
-
-    @media (min-width: $desktop-size) {
-      width: 400px;
-    }
 
     & .fieldset__legend {
       @media (min-width: $tablet-size) {
@@ -33,12 +23,6 @@
   }
 
   &--contacts {
-    margin-bottom: 6px;
-
-    @media (min-width: $tablet-size) {
-      margin-bottom: 50px;
-    }
-
     @media (min-width: $desktop-size) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -78,12 +62,10 @@
   }
 
   &--impression {
-    margin-right: auto;
     padding-bottom: 26px;
 
     @media (min-width: $tablet-size) {
       position: relative;
-      margin-bottom: 69px;
       order: -1;
 
       &::after {
@@ -98,8 +80,15 @@
     }
 
     & .fieldset__legend {
+      box-sizing: border-box;
       width: 100%;
       justify-content: flex-start;
+
+      @media (min-width: $tablet-size) {
+
+        padding-right: 50px;
+        text-align: left;
+      }
 
       @media (min-width: $desktop-size) {
         padding-left: 80px;
@@ -110,14 +99,6 @@
   &--attraction {
     padding-top: 15px;
     padding-bottom: 23px;
-
-    @media (min-width: $tablet-size) {
-      margin-bottom: 70px;
-    }
-
-    @media (min-width: $desktop-size) {
-      margin-bottom: 68px;
-    }
 
     & .fieldset__legend {
       @media (min-width: $tablet-size) {
@@ -131,12 +112,6 @@
   }
 
   &--feedback {
-    margin-bottom: 34px;
-
-    @media (min-width: $tablet-size) {
-      margin-bottom: 61px;
-    }
-
     & .fieldset__legend {
       margin-bottom: 15px;
 
@@ -182,7 +157,6 @@
       content: "";
       width: 10px;
       flex-grow: 1;
-      flex-shrink: 0;
       height: 1px;
       background-color: #dbdbdb;
     }

@@ -50,6 +50,7 @@
     height: inherit;
     background-color: transparent;
     width: 428px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-size) {
@@ -79,8 +80,6 @@
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
-
-  /* Почему кусок кода ниже работает только на мобилке? По каскаду должен срабатывать и на планшете с ПК */
   cursor: pointer;
 
   &:hover {
@@ -90,8 +89,6 @@
   &:active {
     opacity: 0.3;
   }
-
-  /* Закончился кусок кода, который работает только на мобилке */
 
   @media (min-width: $tablet-size) {
     left: 130px;
