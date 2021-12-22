@@ -1,26 +1,61 @@
 .video {
   position: relative;
+
+  @media (min-width: $tablet-size) {
+    width: 648px;
+    background-color: #ff0000; /* Для наглядности, пока нет адаптивной картинки */
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 800px;
+  }
 }
 
 .video__content {
   display: block;
   width: 100%;
+
+  @media (min-width: $tablet-size) {
+    height: 500px;
+  }
 }
 
 .video__controls-wrapper {
   box-sizing: border-box;
   position: absolute;
-  bottom: -29px; /* Сам не понимаю откуда такое число. Должно быть -45px */
-  padding-right: 20px;
-  padding-left: 20px;
-  width: 100%;
-  display: none; /* На время, чтобы не мешалось */
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -66px;
+  width: 280px;
+  height: 111px;
+
+  @media (min-width: $tablet-size) {
+    bottom: 0;
+    width: 100%;
+    height: 93px;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+  }
 }
 
 .video__scale {
-  position: relative;
+  position: absolute;
+  bottom: 66px;
+  width: 280px;
   height: 45px;
   background-color: rgba($color: #000000, $alpha: 0.6);
+
+  @media (min-width: $tablet-size) {
+    bottom: 0;
+    left: 74px;
+    height: inherit;
+    background-color: transparent;
+    width: 428px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 580px;
+  }
 }
 
 .video__bar {
@@ -29,39 +64,123 @@
   top: 50%;
   left: 20px;
   right: 20px;
-  margin-top: -2px;
+  transform: translateY(-50%);
   display: block;
   height: 3px;
   background-color: rgba($color: #ffffff, $alpha: 0.2);
 }
 
 .video__toggle {
-  /* Непонятно откуда идёт позиционирование. Потом разберусь. */
   position: absolute;
-  top: 50px;
-  margin-top: -6px;
+  top: 50%;
   left: 56px;
+  transform: translateY(-50%);
   width: 12px;
   height: 12px;
   background-color: #ffffff;
   border: none;
   border-radius: 50%;
-}
+  cursor: pointer;
 
-@media (min-width: $tablet-size) {
-  .video {
-    padding-right: 60px;
-    padding-left: 60px;
+  &:hover {
+    opacity: 0.6;
   }
 
-  .video__controls-wrapper { /* Почему-то растягивается на ширину body, а не родительского .video */
-    padding: 0;
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-size) {
+    left: 130px;
   }
 }
 
-@media (min-width: $desktop-size) {
-  .video {
-    padding-right: 200px;
-    padding-left: 200px;
+.video__buttons-wrapper {
+  position: absolute;
+  bottom: 0;
+  min-width: 280px;
+  height: 66px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-size) {
+    width: 100%;
+    height: inherit;
+    background-color: transparent;
+  }
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--replay {
+    left: 15px;
+  }
+
+  &--subtitles {
+    right: 73px;
+  }
+
+  &--fullscreen {
+    right: 16px;
+  }
+
+  &:hover .video__icon {
+    fill: $video-icon-mobile-hover;
+  }
+
+  &:active .video__icon {
+    fill: $video-icon-mobile-active;
+  }
+
+  @media (min-width: $tablet-size) {
+    &--replay {
+      left: 25px;
+    }
+
+    &--subtitles {
+      right: 91px;
+    }
+
+    &--fullscreen {
+      right: 34px;
+    }
+
+    &:hover .video__icon {
+      fill: $video-icon-tablet-hover;
+    }
+
+    &:active .video__icon {
+      fill: $video-icon-tablet-active;
+    }
+  }
+
+  @media (min-width: $desktop-size) {
+    &--replay {
+      left: 24px;
+    }
+
+    &--subtitles {
+      right: 93px;
+    }
+
+    &--fullscreen {
+      right: 36px;
+    }
+  }
+}
+
+.video__icon {
+  fill: $video-icon-mobile;
+
+  @media (min-width: $tablet-size) {
+    fill: $video-icon-tablet;
   }
 }

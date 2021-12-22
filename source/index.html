@@ -32,7 +32,7 @@
       </nav>
     </header>
     <main class="page__main">
-      <section class="intro">
+      <section class="intro intro--index">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <img src="img/index-intro.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
       </section>
@@ -48,7 +48,7 @@
         </div>
         <ul class="features__list features-list">
           <li class="features-list__item features-list__item--have-image">
-            <div class="features-list__wrapper features-list__wrapper--1">
+            <div class="features-list__wrapper features-list__wrapper--first">
               <span class="features-list__number">- №1 -</span>
               <b class="features-list__title">Настоящий городок</b>
               <p class="features-list__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -72,7 +72,7 @@
             </ul>
           </li>
           <li class="features-list__item features-list__item--have-image features-list__item--reverse-image">
-            <div class="features-list__wrapper features-list__wrapper--2">
+            <div class="features-list__wrapper features-list__wrapper--second">
               <span class="features-list__number">- №2 -</span>
               <b class="features-list__title">Там есть <span class="features-list__title-nowrap">Мост Дьявола</span></b>
               <p class="features-list__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -106,8 +106,8 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Седона на карте</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565776706!2d-111.83015783999835!3d34.854443815244444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1639465863009!5m2!1sru!2sru" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        <iframe class="map__frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565776706!2d-111.83015783999835!3d34.854443815244444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1639465863009!5m2!1sru!2sru" allowfullscreen="" loading="lazy">
         </iframe>
       </section>
     </main>
@@ -150,21 +150,6 @@
         </a>
       </div>
     </footer>
-    <script>
-      const navMain = document.querySelector('.main-nav');
-      const navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

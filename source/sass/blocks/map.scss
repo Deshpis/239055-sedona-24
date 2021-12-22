@@ -1,8 +1,5 @@
-.map__image {
-  margin: 0;
+.map__frame {
   width: 100%;
-
-  & img {
-    display: block;
-  }
+  height: 350px;
+  border: none;
 }

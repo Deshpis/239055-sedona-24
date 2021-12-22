@@ -1,50 +1,62 @@
 .photo {
-  padding: 22px 20px 15px 20px;
+  padding: 22px 20px 16px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border-top: 1px solid #e5e5e5;
-}
 
-.photo__title {
-  margin: 0;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-}
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
 
-.photo__author {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: none;
-  color: $sub-text-color;
-}
-
-.photo__image {
-  width: 280px;
-  height: 280px;
-  overflow: hidden;
-  order: -1;
-
-  & img {
-    display: block;
+    @media (min-width: $tablet-size) {
+      border: none;
+    }
   }
-}
 
-@media (min-width: $tablet-size) {
-  .photo {
+  @media (min-width: 321px) {
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-size) {
     padding: 0;
     border: none;
 
     &:nth-of-type(2n + 3) .photo__wrapper {
       background-color: #eaeaea;
     }
+
+    &--wide {
+      grid-column: span 2;
+
+      & .photo__image {
+        width: 648px;
+        height: 400px;
+      }
+    }
   }
 
-  .photo__wrapper {
+  @media (min-width: $desktop-size) {
+    position: relative;
+
+    &:nth-of-type(2n + 3) .photo__wrapper {
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &--wide {
+      grid-column: span 3;
+
+      & .photo__image {
+        width: 1200px;
+        height: 400px;
+      }
+    }
+  }
+}
+
+.photo__wrapper {
+  @media (min-width: $tablet-size) {
     box-sizing: border-box;
-    padding: 22px 20px 15px 20px;
+    padding: 17px 20px 15px 20px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -52,57 +64,67 @@
     background-color: #f2f2f2;
   }
 
-  .photo__description {
-    margin-right: auto;
-    text-align: left;
-  }
-
-  .photo--wide {
-    grid-column: span 2;
-
-    & .photo__image {
-      width: 648px;
-      height: 400px;
-    }
-  }
-
-  .photo__image {
-    width: 324px;
-    height: 267px;
-  }
-}
-
-@media (min-width: $desktop-size) {
-  .photo {
-    position: relative;
-
-    &:nth-of-type(2n + 3) .photo__wrapper {
-      background-color: rgba($color: #000000, $alpha: 0.3);
-    }
-  }
-
-  .photo__wrapper {
+  @media (min-width: $desktop-size) {
     position: absolute;
     bottom: 0;
     color: #ffffff;
     background-color: rgba($color: #000000, $alpha: 0.3);
   }
+}
 
-  .photo__author {
+.photo__description {
+  @media (min-width: $tablet-size) {
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+.photo__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.photo__author {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+  color: $sub-text-color;
+
+  @media (min-width: $tablet-size) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-size) {
     color: #ffffff;
   }
+}
 
-  .photo--wide {
-    grid-column: span 3;
+.photo__link {
+  margin-bottom: 10px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  order: -1;
 
-    & .photo__image {
-      width: 1200px;
-      height: 400px;
-    }
+  @media (min-width: $tablet-size) {
+    margin-bottom: 0;
+    width: 324px;
+    height: 267px;
   }
 
-  .photo__image {
+  @media (min-width: $desktop-size) {
     width: 400px;
     height: 267px;
   }
+}
+
+.photo__image {
+  display: block;
 }

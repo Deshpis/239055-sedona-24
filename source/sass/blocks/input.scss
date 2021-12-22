@@ -1,5 +1,4 @@
 .input {
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
 
@@ -10,6 +9,11 @@
     & .input__prompt {
       margin-bottom: 8px;
       padding-left: 22px;
+
+      @media (min-width: $desktop-size) {
+        margin-bottom: 0;
+        padding-left: 0;
+      }
     }
   }
 }
@@ -18,6 +22,10 @@
   margin-right: 15px;
   font-size: 14px;
   line-height: 26px;
+
+  @media (min-width: $desktop-size) {
+    margin-right: 18px;
+  }
 }
 
 .input__field {
@@ -39,7 +47,48 @@
     line-height: 26px;
   }
 
+  &--phone,
+  &--email {
+    padding-right: 80px;
+  }
+
   &--textarea {
+    padding-top: 13px;
     resize: none;
+  }
+}
+
+.input__wrapper {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--phone::after {
+    background-image: url("../../img/phone.svg");
+  }
+
+  &--email::after {
+    background-image: url("../../img/mail.svg");
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 315px;
+  }
+}
+
+.input__desktop-hidden {
+  @media (min-width: $desktop-size) {
+    display: none;
   }
 }
