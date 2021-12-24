@@ -24,7 +24,7 @@
   line-height: 26px;
 
   @media (min-width: $desktop-size) {
-    margin-right: 18px;
+    margin-right: 15px;
   }
 }
 
@@ -33,7 +33,7 @@
   width: 100%;
   padding: 18px 22px 14px 22px;
   border: none;
-  background-color: #f2f2f2;
+  background-color: $input-color;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -45,6 +45,16 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
+  }
+
+  &:hover {
+    background-color: $input-color-hover;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    outline: 4px solid $input-color-hover;
+    outline-offset: -4px;
   }
 
   &--phone,

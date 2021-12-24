@@ -91,6 +91,10 @@
       color: $main-menu-hover;
     }
 
+    &[href]:focus {
+      outline-offset: -1px;
+    }
+
     &[href]:active {
       color: $main-menu-active;
     }

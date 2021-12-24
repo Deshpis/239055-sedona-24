@@ -23,6 +23,18 @@
   justify-content: center;
   width: 46px;
   height: 48px;
-  background-color: $basic-bg-color;
+  background-color: $social-color;
   text-align: center;
+
+  &:hover {
+    background-color: $social-color-hover;
+  }
+
+  &:active {
+    background-color: $social-color-active;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }

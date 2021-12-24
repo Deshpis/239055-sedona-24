@@ -96,8 +96,8 @@
   }
 
   @media (min-width: $desktop-size) {
-    width: 400px;
-    padding-bottom: 79px;
+    min-width: 400px;
+    padding-bottom: 80px;
   }
 }
 
@@ -128,5 +128,13 @@
 .features-details__description-nowrap {
   @media (min-width: $tablet-size) {
     white-space: nowrap;
+  }
+}
+
+.features-details__desktop-wrap {
+  display: none;
+
+  @media (min-width: $desktop-size) {
+    display: inline;
   }
 }

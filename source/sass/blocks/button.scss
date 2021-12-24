@@ -16,4 +16,17 @@
   color: #ffffff;
   background-color: $basic-bg-color;
   cursor: pointer;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+
+  &:active {
+    background-color: $button-color-active;
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:disabled {
+    background-color: $button-color-disabled;
+  }
 }

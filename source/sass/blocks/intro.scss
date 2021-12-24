@@ -13,12 +13,23 @@
     padding-top: 90px;
     padding-bottom: 78px;
     min-height: 389px;
-    background-image: url("../../img/index-intro-bg.jpg");
+    background-image: url("../img/index-intro-bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-intro-bg@2x.jpg");
+    }
 
     @media (min-width: $tablet-size) {
       padding-top: 77px;
-      padding-bottom: 91px;
+      padding-bottom: 85px;
       min-height: 518px;
+    }
+
+    & .intro__text {
+      @media (min-width: $tablet-size) {
+        width: 461px;
+        height: 350px;
+      }
     }
   }
 
@@ -27,16 +38,26 @@
     padding-top: 52px;
     padding-bottom: 60px;
     min-height: 158px;
-    background-image: url("../../img/second-intro-bg.jpg");
+    background-image: url("../img/second-intro-bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/second-intro-bg@2x.jpg");
+    }
 
     @media (min-width: $tablet-size) {
       margin-bottom: 62px;
-      padding-top: 77px;
+      padding-top: 95px;
       padding-bottom: 91px;
       min-height: 287px;
+
+      & .intro__text {
+        width: 457px;
+        height: 78px;
+      }
     }
 
     @media (min-width: $desktop-size) {
+      padding-top: 100px;
       margin-bottom: 97px;
       min-height: 300px;
     }
@@ -47,16 +68,26 @@
     padding-top: 52px;
     padding-bottom: 60px;
     min-height: 158px;
-    background-image: url("../../img/second-intro-bg.jpg");
+    background-image: url("../img/second-intro-bg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/second-intro-bg@2x.jpg");
+    }
 
     @media (min-width: $tablet-size) {
       margin-bottom: 73px;
-      padding-top: 77px;
+      padding-top: 95px;
       padding-bottom: 91px;
       min-height: 287px;
+
+      & .intro__text {
+        width: 457px;
+        height: 78px;
+      }
     }
 
     @media (min-width: $desktop-size) {
+      padding-top: 100px;
       margin-bottom: 113px;
       min-height: 300px;
     }
@@ -70,7 +101,7 @@
     bottom: -1px;
     width: 100%;
     height: 57px;
-    background-image: url("../../img/intro-decorative.svg");
+    background-image: url("../img/intro-decorative.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
