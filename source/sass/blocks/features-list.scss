@@ -165,8 +165,6 @@
   overflow: hidden;
 
   @media (min-width: $tablet-size) {
-    /* width: 512px;
-    flex-grow: 1; */
     height: 256px;
   }
 }
@@ -178,10 +176,8 @@
   object-fit: cover;
 }
 
-.features-list__desktop-wrap {
-  display: none;
-
+.features-list__desktop-nowrap {
   @media (min-width: $desktop-size) {
-    display: inline;
+    white-space: nowrap;
   }
 }

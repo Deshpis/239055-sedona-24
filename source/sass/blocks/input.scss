@@ -51,6 +51,7 @@
     background-color: $input-color-hover;
   }
 
+  &:focus,
   &:active {
     background-color: #ffffff;
     outline: 4px solid $input-color-hover;
@@ -85,11 +86,11 @@
   }
 
   &--phone::after {
-    background-image: url("../../img/phone.svg");
+    background-image: url("../img/phone.svg");
   }
 
   &--email::after {
-    background-image: url("../../img/mail.svg");
+    background-image: url("../img/mail.svg");
   }
 
   @media (min-width: $desktop-size) {

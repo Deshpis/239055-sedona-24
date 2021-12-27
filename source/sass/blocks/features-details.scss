@@ -125,16 +125,14 @@
   }
 }
 
-.features-details__description-nowrap {
+.features-details__tablet-nowrap {
   @media (min-width: $tablet-size) {
     white-space: nowrap;
   }
 }
 
-.features-details__desktop-wrap {
-  display: none;
-
+.features-details__desktop-nowrap {
   @media (min-width: $desktop-size) {
-    display: inline;
+    white-space: nowrap;
   }
 }
