@@ -28,6 +28,7 @@
     display: block;
     content: "";
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
   }
 
@@ -36,7 +37,7 @@
     left: 3px;
     width: 39px;
     height: 37px;
-    background-image: url("../../img/feature-house-mobile.svg");
+    background-image: url("../img/feature-house.svg");
   }
 
   &--souvenirs::before {
@@ -44,7 +45,7 @@
     left: 7px;
     width: 32px;
     height: 38px;
-    background-image: url("../../img/feature-souvenirs-mobile.svg");
+    background-image: url("../img/feature-souvenirs.svg");
   }
 
   &--food::before {
@@ -52,7 +53,7 @@
     left: 0;
     width: 40px;
     height: 35px;
-    background-image: url("../../img/feature-food-mobile.svg");
+    background-image: url("../img/feature-food.svg");
   }
 
   @media (min-width: $tablet-size) {
@@ -77,21 +78,18 @@
       top: 60px;
       width: 75px;
       height: 73px;
-      background-image: url("../../img/feature-house.svg");
     }
 
     &--souvenirs::before {
       top: 57px;
       width: 63px;
       height: 76px;
-      background-image: url("../../img/feature-souvenirs.svg");
     }
 
     &--food::before {
       top: 63px;
       width: 77px;
       height: 69px;
-      background-image: url("../../img/feature-food.svg");
     }
   }
 
