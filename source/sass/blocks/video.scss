@@ -1,9 +1,11 @@
 .video {
   position: relative;
+  width: 320px;
+  height: 201px;
 
   @media (min-width: $tablet-size) {
     width: 648px;
-    background-color: #ff0000; /* Для наглядности, пока нет адаптивной картинки */
+    height: 500px;
   }
 
   @media (min-width: $desktop-size) {
@@ -11,12 +13,18 @@
   }
 }
 
-.video__content {
+.video__preview {
   display: block;
-  width: 100%;
+  width: 320px;
+  height: 201px;
 
   @media (min-width: $tablet-size) {
+    width: 648px;
     height: 500px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 800px;
   }
 }
 

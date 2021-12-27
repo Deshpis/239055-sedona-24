@@ -14,8 +14,16 @@
   display: block;
   width: 27px;
   height: 35px;
+
+  &:hover .copyright__logo-academy {
+    fill: $copyright-logo-hover;
+  }
+
+  &:active .copyright__logo-academy {
+    fill: $copyright-logo-active;
+  }
 }
 
 .copyright__logo-academy {
-  fill: #000000;
+  fill: $copyright-logo;
 }

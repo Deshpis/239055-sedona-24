@@ -3,10 +3,17 @@
   background-color: #ffffff;
 }
 
-.header__logo {
+.header__logo-link {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%);
   z-index: 1;
+}
+
+.header__logo-image {
+  @media (min-width: $desktop-size) {
+    width: 187px;
+    height: 96px;
+  }
 }

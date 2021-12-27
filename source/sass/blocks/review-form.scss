@@ -13,6 +13,8 @@
 }
 
 .review-form__fieldset {
+  margin: 0;
+
   @media (min-width: $tablet-size) {
     width: 100%;
   }

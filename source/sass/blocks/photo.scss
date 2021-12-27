@@ -28,6 +28,11 @@
     &--wide {
       grid-column: span 2;
 
+      & .photo__link {
+        width: 648px;
+        height: 400px;
+      }
+
       & .photo__image {
         width: 648px;
         height: 400px;
@@ -45,9 +50,12 @@
     &--wide {
       grid-column: span 3;
 
+      & .photo__link {
+        width: 1200px;
+      }
+
       & .photo__image {
         width: 1200px;
-        height: 400px;
       }
     }
   }
@@ -127,4 +135,13 @@
 
 .photo__image {
   display: block;
+
+  @media (min-width: $tablet-size) {
+    width: 324px;
+    height: 267px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 400px;
+  }
 }
