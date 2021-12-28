@@ -33,12 +33,12 @@
   width: 100%;
   padding: 18px 22px 14px 22px;
   border: none;
-  background-color: $input-color;
+  background-color: $input;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
 
   &::placeholder {
     font-family: "PT Sans", sans-serif;
@@ -48,13 +48,13 @@
   }
 
   &:hover {
-    background-color: $input-color-hover;
+    background-color: $input-hover;
   }
 
   &:focus,
   &:active {
-    background-color: #ffffff;
-    outline: 4px solid $input-color-hover;
+    background-color: $white;
+    outline: 4px solid $input-hover;
     outline-offset: -4px;
   }
 
@@ -80,7 +80,7 @@
     right: 0;
     width: 58px;
     height: 58px;
-    background-color: #e6e6e6;
+    background-color: $mercury;
     background-repeat: no-repeat;
     background-position: center;
   }

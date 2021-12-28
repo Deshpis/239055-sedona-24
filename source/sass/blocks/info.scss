@@ -3,9 +3,9 @@
   position: relative;
   margin: auto;
   display: none;
-  background-color: #ffffff;
+  background-color: $white;
   text-align: center;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba($black, 0.15);
 
   &--show {
     display: block;
@@ -78,7 +78,7 @@
   width: 245px;
   font-size: 14px;
   line-height: 24px;
-  color: $sub-text-color;
+  color: $sub-text;
 
   @media (min-width: $tablet-size) {
     margin-bottom: 37px;
@@ -110,7 +110,7 @@
   box-sizing: border-box;
   padding: 20px;
   width: 100%;
-  background-color: #f2f2f2;
+  background-color: $concrete;
 
   @media (min-width: $tablet-size) {
     padding: 44px 91px;

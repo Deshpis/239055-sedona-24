@@ -1,40 +1,73 @@
+/* Размеры устройств */
 $mobile-size: 320px;
 $mobile-size-only: 767px;
 $tablet-size: 768px;
 $desktop-size: 1200px;
 
-$basic-bg-color: #81b3d2;
+/* Наименования цветов */
+$white: #ffffff;
+$black: #000000;
+$mine-shaft: #333333;
+$pine-cone: #766357;
+$half-baked: #81b3d2;
+$fountain-blue: #669ec0;
+$steel-blue: #5496bd;
+$aqua-island: #9ac2db;
+$mercury: #e5e5e5;
+$concrete: #f2f2f2;
+$alto: #d5d5d5;
+$alto-light: #dbdbdb;
+$gallery: #eeeeee;
+$gallery-darken: #eaeaea;
+$gallery-darkest: #e1e1e1;
+$regent-gray: #808f9a;
+$shuttle-gray: #5c6870;
 
-$main-menu-current: #766357;
-$main-menu-hover: #81b3d2;
-$main-menu-active: rgba(#000000, 0.3);
 
-$button-color: #81b3d2;
-$button-color-hover: #669ec0;
-$button-color-active: #5496bd;
-$button-color-disabled: #e5e5e5;
+/* Основной фоновый цвет */
+$basic-bg: $half-baked;
 
-$input-color: #f2f2f2;
-$input-color-hover: #e5e5e5;
+/* Ссылки главного меню */
+$main-menu-current: $pine-cone;
+$main-menu-hover: $half-baked;
+$main-menu-active: rgba($black, 0.3);
 
-$social-color: #81b3d2;
-$social-color-hover: #669ec0;
-$social-color-active: #5496bd;
+/* Кнопка */
+$button-bg: $half-baked;
+$button-bg-hover: $fountain-blue;
+$button-bg-active: $steel-blue;
+$button-bg-disabled: $mercury;
+$button-text: $white;
 
-$copyright-logo: #000000;
-$copyright-logo-hover: #81b3d2;
-$copyright-logo-active: rgba(#000000, 0.3);
+/* Поле ввода */
+$input: $concrete;
+$input-hover: $mercury;
 
-$heading-text-color: #000000;
-$sub-text-color: #333333;
+/* Иконка соц. сети */
+$social: $half-baked;
+$social-hover: $fountain-blue;
+$social-active: $steel-blue;
 
-$radiocheck-color: #f2f2f2;
-$radiocheck-color-hover: #e5e5e5;
-$radiocheck-color-active: #d5d5d5;
+/* Логотип HTML Academy */
+$copyright-logo: $black;
+$copyright-logo-hover: $half-baked;
+$copyright-logo-active: rgba($black, 0.3);
 
-$video-icon-mobile: #5c6870;
-$video-icon-mobile-hover: #333333;
+/* Заголовок */
+$heading-text-color: $black;
+
+/* Текст */
+$sub-text: $mine-shaft;
+
+/* Радио и чекбокс */
+$radiocheck: $concrete;
+$radiocheck-hover: $mercury;
+$radiocheck-active: $alto;
+
+/* Элементы управления видео */
+$video-icon-mobile: $shuttle-gray;
+$video-icon-mobile-hover: $mine-shaft;
 $video-icon-mobile-active: rgba($video-icon-mobile-hover, 0.3);
-$video-icon-tablet: #ffffff;
+$video-icon-tablet: $white;
 $video-icon-tablet-hover: rgba($video-icon-tablet, 0.6);
 $video-icon-tablet-active: rgba($video-icon-tablet, 0.3);

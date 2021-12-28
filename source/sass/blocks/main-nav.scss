@@ -3,7 +3,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  color: #ffffff;
+  color: $white;
 
 
   @media (max-width: $mobile-size-only) {
@@ -24,10 +24,10 @@
       left: 20px;
       width: 23px;
       height: 4px;
-      background-color: $button-color;
+      background-color: $half-baked;
       box-shadow:
-        0 9px 0 0 $button-color,
-        0 18px 0 0 $button-color;
+        0 9px 0 0 $half-baked,
+        0 18px 0 0 $half-baked;
     }
 
     &--opened .main-nav__toggle::before,
@@ -38,7 +38,7 @@
       content: "";
       width: 27px;
       height: 4px;
-      background-color: #ffffff;
+      background-color: $white;
     }
 
     &--opened .main-nav__toggle::before {

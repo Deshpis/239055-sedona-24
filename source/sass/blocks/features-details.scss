@@ -2,8 +2,8 @@
   margin: 0;
   padding: 35px 40px 35px 18px;
   list-style: none;
-  color: #000000;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
   text-align: left;
 
   @media (min-width: $tablet-size) {
@@ -62,7 +62,7 @@
     padding: 158px 36px 60px 36px;
     min-width: 256px;
     max-width: 33%;
-    background-color: #ffffff;
+    background-color: $white;
     text-align: center;
 
     &--souvenirs {
@@ -115,7 +115,7 @@
 .features-details__description {
   margin: 0;
   line-height: 21px;
-  color: $sub-text-color;
+  color: $sub-text;
 
   @media (min-width: $desktop-size) {
     margin: 0 auto;
