@@ -24,7 +24,7 @@
   }
 
   &:focus + .checkbox__icon {
-    outline: 2px solid #000000;
+    outline: 2px solid $black;
   }
 }
 
@@ -32,15 +32,15 @@
   position: absolute;
   width: 56px;
   height: 56px;
-  background-color: $radiocheck-color;
+  background-color: $radiocheck;
   border-radius: 5px;
 
   &:hover {
-    background-color: $radiocheck-color-hover;
+    background-color: $radiocheck-hover;
   }
 
   &:active {
-    background-color: $radiocheck-color-active;
+    background-color: $radiocheck-active;
   }
 
   &:active .checkbox__icon::after {

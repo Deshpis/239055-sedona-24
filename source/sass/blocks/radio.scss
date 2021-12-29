@@ -20,12 +20,12 @@
     margin-left: -10px;
     width: 20px;
     height: 20px;
-    background-color: $sub-text-color;
+    background-color: $sub-text;
     border-radius: 50%;
   }
 
   &:focus + .radio__icon {
-    outline: 2px solid #000000;
+    outline: 2px solid $black;
   }
 }
 
@@ -34,15 +34,15 @@
 
   width: 57px;
   height: 57px;
-  background-color: $radiocheck-color;
+  background-color: $radiocheck;
   border-radius: 50%;
 
   &:hover .radio__icon {
-    background-color: $radiocheck-color-hover;
+    background-color: $radiocheck-hover;
   }
 
   &:active .radio__icon {
-    background-color: $radiocheck-color-active;
+    background-color: $radiocheck-active;
   }
 
   &:active .radio__icon::after {

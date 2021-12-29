@@ -13,20 +13,20 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
-  color: #ffffff;
-  background-color: $basic-bg-color;
+  color: $button-text;
+  background-color: $button-bg;
   cursor: pointer;
 
   &:hover {
-    background-color: $button-color-hover;
+    background-color: $button-bg-hover;
   }
 
   &:active {
-    background-color: $button-color-active;
-    color: rgba(#ffffff, 0.3);
+    background-color: $button-bg-active;
+    color: rgba($white, 0.3);
   }
 
   &:disabled {
-    background-color: $button-color-disabled;
+    background-color: $button-bg-disabled;
   }
 }

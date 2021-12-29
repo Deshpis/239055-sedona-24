@@ -23,18 +23,22 @@
   justify-content: center;
   width: 46px;
   height: 48px;
-  background-color: $social-color;
+  background-color: $social;
   text-align: center;
 
   &:hover {
-    background-color: $social-color-hover;
+    background-color: $social-hover;
   }
 
   &:active {
-    background-color: $social-color-active;
+    background-color: $social-active;
   }
 
   &:active svg {
     opacity: 0.3;
   }
+}
+
+.social__icon {
+  fill: #ffffff;
 }

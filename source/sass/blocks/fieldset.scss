@@ -1,7 +1,7 @@
 .fieldset {
   padding: 20px;
   border: none;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $mercury;
   display: flex;
   flex-direction: column;
 
@@ -74,7 +74,7 @@
         bottom: 0;
         right: 0;
         width: 1px;
-        background-color: #dbdbdb;
+        background-color: $alto-light;
       }
     }
 
@@ -157,7 +157,7 @@
       width: 10px;
       flex-grow: 1;
       height: 1px;
-      background-color: #dbdbdb;
+      background-color: $alto-light;
     }
 
     &::before {
