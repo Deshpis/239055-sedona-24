@@ -63,11 +63,10 @@ const createWebp = () => {
 }
 
 // SVG
-const svg = () =>  // Почему это работает так
+const svg = () =>
   gulp.src('source/img/*.svg')
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
-
 
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
@@ -138,7 +137,6 @@ export const build = gulp.series(
     createWebp
   )
 )
-
 
 export default gulp.series(
   clean,
