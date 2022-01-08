@@ -182,7 +182,7 @@
 
 .fieldset__label {
   &--phone {
-    @media(min-width: $desktop-size) {
+    @media (min-width: $desktop-size) {
       box-sizing: border-box;
       padding-right: 80px;
     }
