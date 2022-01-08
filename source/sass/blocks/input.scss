@@ -22,6 +22,7 @@
   margin-right: 15px;
   font-size: 14px;
   line-height: 26px;
+  word-wrap: break-word;
 
   @media (min-width: $desktop-size) {
     margin-right: 15px;
@@ -61,6 +62,10 @@
   &--phone,
   &--email {
     padding-right: 80px;
+
+    @media (min-width: $desktop-size) {
+      width: 315px;
+    }
   }
 
   &--textarea {

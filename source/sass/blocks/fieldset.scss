@@ -180,6 +180,15 @@
   }
 }
 
+.fieldset__label {
+  &--phone {
+    @media (min-width: $desktop-size) {
+      box-sizing: border-box;
+      padding-right: 80px;
+    }
+  }
+}
+
 .fieldset__label:not(:last-of-type) {
   margin-bottom: 20px;
 }

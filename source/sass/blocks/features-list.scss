@@ -13,6 +13,7 @@
 .features-list__item {
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
 
   &--have-image {
     padding: 0;
@@ -123,7 +124,6 @@
   @media (min-width: $tablet-size) {
     margin-bottom: 13px;
     font-size: 21px;
-    word-wrap: break-word;
 
     &--narrow {
       margin-left: auto;

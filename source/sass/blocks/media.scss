@@ -47,6 +47,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-size) {
     margin-bottom: 35px;
