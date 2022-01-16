@@ -35,14 +35,14 @@
   padding: 18px 22px 14px 22px;
   border: none;
   background-color: $input;
-  font-family: "PT Sans", sans-serif;
+  font-family: $main-font;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   color: $black;
 
   &::placeholder {
-    font-family: "PT Sans", sans-serif;
+    font-family: $main-font;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
@@ -70,6 +70,7 @@
 
   &--textarea {
     padding-top: 13px;
+    height: 160px;
     resize: none;
   }
 }
@@ -100,11 +101,5 @@
 
   @media (min-width: $desktop-size) {
     width: 315px;
-  }
-}
-
-.input__desktop-hidden {
-  @media (min-width: $desktop-size) {
-    display: none;
   }
 }

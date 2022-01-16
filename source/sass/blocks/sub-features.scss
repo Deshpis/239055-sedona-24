@@ -1,4 +1,4 @@
-.features-details {
+.sub-features {
   margin: 0;
   padding: 35px 40px 35px 18px;
   list-style: none;
@@ -14,7 +14,7 @@
   }
 }
 
-.features-details__item {
+.sub-features__item {
   margin-bottom: 27px;
   position: relative;
   padding-left: 52px;
@@ -100,7 +100,7 @@
   }
 }
 
-.features-details__title {
+.sub-features__title {
   display: block;
   margin-bottom: 15px;
   font-weight: bold;
@@ -113,7 +113,7 @@
   }
 }
 
-.features-details__description {
+.sub-features__description {
   margin: 0;
   line-height: 21px;
   color: $sub-text;
@@ -121,17 +121,5 @@
   @media (min-width: $desktop-size) {
     margin: 0 auto;
     width: 300px;
-  }
-}
-
-.features-details__tablet-nowrap {
-  @media (min-width: $tablet-size) {
-    white-space: nowrap;
-  }
-}
-
-.features-details__desktop-nowrap {
-  @media (min-width: $desktop-size) {
-    white-space: nowrap;
   }
 }

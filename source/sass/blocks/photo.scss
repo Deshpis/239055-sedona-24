@@ -93,6 +93,11 @@
   font-size: 14px;
   line-height: 24px;
   text-align: left;
+
+  @media (min-width: $desktop-size) {
+    max-height: 100px;
+    overflow-y: scroll;
+  }
 }
 
 .photo__author {

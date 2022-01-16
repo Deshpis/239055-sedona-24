@@ -1,0 +1,16 @@
+.nowrap {
+  white-space: inherit;
+
+  &--tablet {
+    @media (min-width: $tablet-size) {
+      white-space: nowrap;
+    }
+  }
+
+
+  &--desktop {
+    @media (min-width: $desktop-size) {
+      white-space: nowrap;
+    }
+  }
+}

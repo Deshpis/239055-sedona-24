@@ -1,9 +1,5 @@
 .media {
   text-align: center;
-
-  @media (min-width: $tablet-size) {
-    margin-bottom: 20px;
-  }
 }
 
 .media__wrapper {
@@ -11,7 +7,7 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  &--1 {
+  &--first {
     width: 320px;
     margin-bottom: 30px;
 
@@ -25,7 +21,7 @@
     }
   }
 
-  &--2 {
+  &--second {
     width: 300px;
     margin-bottom: 34px;
 
