@@ -1,11 +1,11 @@
 .button {
   box-sizing: border-box;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-right: 25px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
   padding-left: 25px;
   display: block;
-  font-family: "PT Sans", sans-serif;
+  font-family: $main-font;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;

@@ -38,12 +38,6 @@
   }
 }
 
-.hotel-search__text-nowrap {
-  @media (min-width: $tablet-size) {
-    white-space: nowrap;
-  }
-}
-
 .hotel-search__button {
   padding-top: 20px;
   width: 100%;

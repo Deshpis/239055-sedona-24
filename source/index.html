@@ -11,8 +11,6 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-    <link rel="preload" href="fonts/ptsans.woff" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
     <title>Седона</title>
   </head>
   <body class="page__body">
@@ -23,7 +21,7 @@
           <img class="header__logo-image" src="img/logo-mobile.svg" width="102" height="84" alt="Логотип Седона.">
         </picture>
       </a>
-      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="header__nav main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -46,88 +44,88 @@
     <main class="page__main">
       <section class="intro intro--index">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img class="intro__text" src="img/index-intro-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону!">
+        <img class="intro__text" src="img/index-intro-mobile.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону. Потому что гранд каньон отстой!">
       </section>
       <section class="features">
         <h2 class="visually-hidden">Особенности Седоны</h2>
         <div class="features__wrapper">
           <b class="features__slogan">
-            Седона &mdash; небольшой городок в Аризоне, <span class="features__slogan-nowrap">заслуживающий большего!</span>
+            Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!
           </b>
           <p class="features__intro">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
         </div>
-        <ul class="features__list features-list">
-          <li class="features-list__item features-list__item--have-image">
-            <div class="features-list__wrapper features-list__wrapper--first">
-              <span class="features-list__number">- №1 -</span>
-              <b class="features-list__title">Настоящий городок</b>
-              <p class="features-list__description">Седона не аттракцион для туристов, <span class="features-list__desktop-nowrap">там течет своя жизнь</span></p>
+        <ul class="features__list main-features">
+          <li class="main-features__item main-features__item--have-image">
+            <div class="main-features__wrapper main-features__wrapper--first">
+              <span class="main-features__number">- №1 -</span>
+              <b class="main-features__title">Настоящий городок</b>
+              <p class="main-features__description">Седона не аттракцион для туристов, <span class="nowrap nowrap--desktop">там течет своя жизнь</span></p>
             </div>
-            <figure class="features-list__image-container">
+            <figure class="main-features__image-container">
               <picture>
                 <source media="(min-width: 1200px)" type="image/webp" srcset="img/features-1-desktop.webp 1x, img/features-1-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/features-1-tablet.webp 1x, img/features-1-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/features-1-mobile.webp 1x, img/features-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/features-1-desktop.jpg 1x, img/features-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/features-1-tablet.jpg 1x, img/features-1-tablet@2x.jpg 2x">
-                <img class="features-list__image" src="img/features-1-mobile.jpg" srcset="img/features-1-mobile@2x.jpg 2x" width="320" height="260" alt="Город Седона.">
+                <img class="main-features__image" src="img/features-1-mobile.jpg" srcset="img/features-1-mobile@2x.jpg 2x" width="320" height="260" alt="Тихая и уютная Седона.">
               </picture>
             </figure>
-            <ul class="features-list__item-details features-details">
-              <li class="features-details__item features-details__item--house">
-                <b class="features-details__title">Жилье</b>
-                <p class="features-details__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <ul class="main-features__item-details sub-features">
+              <li class="sub-features__item sub-features__item--house">
+                <b class="sub-features__title">Жилье</b>
+                <p class="sub-features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="features-details__item features-details__item--souvenirs">
-                <b class="features-details__title">Сувениры</b>
-                <p class="features-details__description">Не только китайского, <span class="features-details__desktop-nowrap">но <span class="features-details__tablet-nowrap">и местного производства!</span></span></p>
+              <li class="sub-features__item sub-features__item--souvenirs">
+                <b class="sub-features__title">Сувениры</b>
+                <p class="sub-features__description">Не только китайского, <span class="nowrap nowrap--desktop">но <span class="nowrap nowrap--tablet">и местного производства!</span></span></p>
               </li>
-              <li class="features-details__item features-details__item--food">
-                <b class="features-details__title">Еда</b>
-                <p class="features-details__description">Всегда заказывайте фирменный бургер, <span class="features-details__tablet-nowrap">вы не разочаруетесь!</span></p>
+              <li class="sub-features__item sub-features__item--food">
+                <b class="sub-features__title">Еда</b>
+                <p class="sub-features__description">Всегда заказывайте фирменный бургер, <span class="nowrap nowrap--tablet">вы не разочаруетесь!</span></p>
               </li>
             </ul>
           </li>
-          <li class="features-list__item features-list__item--have-image features-list__item--reverse-image">
-            <div class="features-list__wrapper features-list__wrapper--second">
-              <span class="features-list__number">- №2 -</span>
-              <b class="features-list__title">Там есть <span class="features-list__title-nowrap">Мост Дьявола</span></b>
-              <p class="features-list__description">Да, по нему можно пройти! <span class="features-list__desktop-nowrap">Если вы осмелитесь, конечно</span></p>
+          <li class="main-features__item main-features__item--have-image main-features__item--reverse-image">
+            <div class="main-features__wrapper main-features__wrapper--second">
+              <span class="main-features__number">- №2 -</span>
+              <b class="main-features__title">Там есть <span class="nowrap nowrap--tablet">Мост Дьявола</span></b>
+              <p class="main-features__description">Да, по нему можно пройти! <span class="nowrap nowrap--desktop">Если вы осмелитесь, конечно</span></p>
             </div>
-            <figure class="features-list__image-container">
+            <figure class="main-features__image-container">
               <picture>
                 <source media="(min-width: 1200px)" type="image/webp" srcset="img/features-2-desktop.webp 1x, img/features-2-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/features-2-tablet.webp 1x, img/features-2-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/features-2-mobile.webp 1x, img/features-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/features-2-desktop.jpg 1x, img/features-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/features-2-tablet.jpg 1x, img/features-2-tablet@2x.jpg 2x">
-                <img class="features-list__image" src="img/features-2-mobile.jpg" srcset="img/features-2-mobile@2x.jpg" width="320" height="260" alt="Мост Дьявола.">
+                <img class="main-features__image" src="img/features-2-mobile.jpg" srcset="img/features-2-mobile@2x.jpg" width="320" height="260" alt="Главная достопримечательность - тропа Мост Дьявола.">
               </picture>
             </figure>
           </li>
-          <li class="features-list__item">
-            <span class="features-list__number">- №3 -</span>
-            <b class="features-list__title">Небольшая площадь</b>
-            <p class="features-list__description">Все интересные места находятся очень близко</p>
+          <li class="main-features__item">
+            <span class="main-features__number">- №3 -</span>
+            <b class="main-features__title">Небольшая площадь</b>
+            <p class="main-features__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="features-list__item">
-            <span class="features-list__number">- №4 -</span>
-            <b class="features-list__title">Красивая дорога</b>
-            <p class="features-list__description">Ехать в Седону из <span class="features-details__tablet-nowrap">Лас-Вегаса</span> совсем <span class="features-details__tablet-nowrap">не скучно!</span></p>
+          <li class="main-features__item">
+            <span class="main-features__number">- №4 -</span>
+            <b class="main-features__title">Красивая дорога</b>
+            <p class="main-features__description">Ехать в Седону из <span class="nowrap nowrap--tablet">Лас-Вегаса</span> совсем <span class="nowrap nowrap--tablet">не скучно!</span></p>
           </li>
-          <li class="features-list__item">
-            <span class="features-list__number">- №5 -</span>
-            <b class="features-list__title features-list__title--narrow">Мало туристов</b>
-            <p class="features-list__description">Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="main-features__item">
+            <span class="main-features__number">- №5 -</span>
+            <b class="main-features__title main-features__title--narrow">Мало туристов</b>
+            <p class="main-features__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
       </section>
       <section class="hotel-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <b class="hotel-search__title">Заинтересовались?</b>
-        <p class="hotel-search__text">Укажите предполагаемые даты поездки, <span class="hotel-search__text-nowrap">и мы покажем вам лучшие </span> предложения гостиниц в Седоне</p>
+        <p class="hotel-search__text">Укажите предполагаемые даты поездки, <span class="nowrap nowrap--tablet">и мы покажем вам лучшие </span> предложения гостиниц в Седоне</p>
         <a class="hotel-search__button button" href="#">Найти гостиницу</a>
       </section>
       <section class="map">

@@ -1,14 +1,14 @@
 .review-form {
-  margin-bottom: 44px;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet-size) {
-    margin-bottom: 67px;
+    padding-bottom: 67px;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-size) {
-    margin-bottom: 72px;
+    padding-bottom: 70px;
   }
 }
 

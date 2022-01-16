@@ -1,0 +1,13 @@
+.hidden {
+  &--tablet {
+    @media (min-width: $tablet-size) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-size) {
+      display: none;
+    }
+  }
+}

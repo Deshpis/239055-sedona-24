@@ -11,8 +11,6 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-    <link rel="preload" href="fonts/ptsans.woff" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
     <title>Отзыв о Седоне</title>
   </head>
   <body class="page__body">
@@ -23,7 +21,7 @@
           <img class="header__logo-image" src="img/logo-mobile.svg" width="102" height="84" alt="Логотип Седона.">
         </picture>
       </a>
-      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="header__nav main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -72,7 +70,7 @@
           <fieldset class="review-form__fieldset review-form__fieldset--contacts fieldset fieldset--contacts">
             <h3 class="fieldset__legend fieldset__legend--decor">Контактная информация:</h3>
             <label class="fieldset__label fieldset__label--phone input input--column">
-              <span class="input__prompt"><span class="input__desktop-hidden">Контактный</span> телефон*:</span>
+              <span class="input__prompt"><span class="hidden hidden--desktop">Контактный</span> телефон*:</span>
               <span class="input__wrapper input__wrapper--phone">
                 <input class="input__field input__field--phone" type="tel" name="user-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон" required>
               </span>
@@ -131,7 +129,7 @@
             <h3 class="fieldset__legend fieldset__legend--decor">Опишите свои эмоции:</h3>
             <label class="fieldset__label input">
               <span class="input__prompt visually-hidden">Введите текст здесь:</span>
-              <textarea class="input__field input__field--textarea" name="user-feedback" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="input__field input__field--textarea" name="user-feedback" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </fieldset>
           <button class="review-form__button button" type="submit">Отправить отзыв</button>

@@ -1,4 +1,4 @@
-.features-list {
+.main-features {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -10,7 +10,7 @@
   }
 }
 
-.features-list__item {
+.main-features__item {
   display: flex;
   flex-direction: column;
   word-wrap: break-word;
@@ -20,7 +20,7 @@
     color: $white;
     background-color: $basic-bg;
 
-    & .features-list__title {
+    & .main-features__title {
       width: 100%;
 
       @media (min-width: $desktop-size) {
@@ -31,7 +31,7 @@
     }
   }
 
-  &:not(.features-list__item--have-image) {
+  &:not(.main-features__item--have-image) {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 25px 15px 24px 15px;
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $tablet-size) {
-    &:not(.features-list__item--have-image) {
+    &:not(.main-features__item--have-image) {
       padding: 41px 40px 42px 40px;
       min-width: 256px;
       max-width: 33%;
@@ -54,21 +54,21 @@
     }
 
     &--reverse-image {
-      & .features-list__image-container {
+      & .main-features__image-container {
         order: -1;
       }
     }
   }
 
   @media (min-width: $desktop-size) {
-    &:not(.features-list__item--have-image) {
+    &:not(.main-features__item--have-image) {
       min-width: 400px;
       padding-bottom: 62px;
     }
   }
 }
 
-.features-list__wrapper {
+.main-features__wrapper {
   padding-right: 20px;
   padding-left: 20px;
   display: flex;
@@ -104,7 +104,7 @@
   }
 }
 
-.features-list__number {
+.main-features__number {
   margin-bottom: 18px;
   font-size: 14px;
   line-height: 21px;
@@ -114,7 +114,7 @@
   }
 }
 
-.features-list__title {
+.main-features__title {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 18px;
@@ -139,13 +139,7 @@
   }
 }
 
-.features-list__title-nowrap {
-  @media (min-width: $tablet-size) {
-    white-space: nowrap;
-  }
-}
-
-.features-list__description {
+.main-features__description {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
@@ -156,7 +150,7 @@
   }
 }
 
-.features-list__image-container {
+.main-features__image-container {
   margin: 0;
   padding: 0;
   min-width: 320px;
@@ -169,15 +163,9 @@
   }
 }
 
-.features-list__image {
+.main-features__image {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.features-list__desktop-nowrap {
-  @media (min-width: $desktop-size) {
-    white-space: nowrap;
-  }
 }
